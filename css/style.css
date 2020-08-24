@@ -2,8 +2,11 @@
 #header {
     background: url(../img/header_bg.jpg) repeat-x center top;
 }
-#nav{
+#nav {
     background-color: #f6fdff;
+}
+#title {
+    background-color: #eaf7fd;
 }
 
 /* Container */
@@ -191,6 +194,37 @@
 
 .nav > div li:hover a:after {
     width: 100%;
+}
+
+/* title */
+.title {
+    position: relative;
+    text-align: center;
+}
+
+.title h2 {
+    font-family: 'Nanum Gothic', cursive;
+    font-size: 35px;
+    color: #0093bd;
+    padding: 10px 0;
+}
+
+.title .btn {
+    position: absolute; right: 0; top: 10px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    background: #3192bf;
+    color: #fff;
+    font-size: 35px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.title .btn:hover {
+    box-shadow: 
+    0 0 0 3px rgba(71, 154, 191, 0.9) inset,
+    0 0 0 100px rgba(0, 0, 0, 0.1) inset;
 }
 
 /* Media Query */
