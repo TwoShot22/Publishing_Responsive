@@ -593,6 +593,18 @@ only screen and (min-resolution: 3dppx) {
     position: absolute; left: 11px; top: 8px;
 }
 
+/* Light Box */
+.square a {
+    float: left;
+    width: 19%;
+    margin: 0.5%;
+}
+
+.square a img {
+    width: 100%;
+    display: block;
+}
+
 /* Media Query */
 /* 0 ~ 1220px */
 @media (max-width: 1220px) {
@@ -611,10 +623,26 @@ only screen and (min-resolution: 3dppx) {
     .title .btn {
         right: 10px;
     }
+
+    .square a {
+        width: 24%;
+    }
+
+    .square a:nth-child(5n) {
+        display: none;
+    }
 }
 
 /* 0 ~ 1024px */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+    .square a {
+        width: 32.3333%;
+    }
+
+    .square a:nth-child(5) {
+        display: block;
+    }
+}
 
 /* 0 ~ 960px */
 @media (max-width: 960px) {
@@ -751,6 +779,14 @@ only screen and (min-resolution: 3dppx) {
     .slider figcaption span {
         font-size: 14px;
     }
+
+    .square a {
+        width: 49%;
+    }
+
+    .square a:nth-child(5) {
+        display: none;
+    }
 }
 
 /* 0 ~ 480px */
@@ -764,5 +800,11 @@ only screen and (min-resolution: 3dppx) {
 
     .nav>div:last-child li {
         width: 100%;
+    }
+
+    .square a {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
     }
 }
